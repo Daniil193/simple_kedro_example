@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/Surnyaev-DA/Documents/ANACONDA/OPiR/MLOps/Kedro/Kedro_example/titanic/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: titanic

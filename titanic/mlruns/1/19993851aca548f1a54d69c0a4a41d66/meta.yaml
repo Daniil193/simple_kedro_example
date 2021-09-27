@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Surnyaev-DA/Documents/ANACONDA/OPiR/MLOps/Kedro/Kedro_example/titanic/mlruns/1/19993851aca548f1a54d69c0a4a41d66/artifacts
+end_time: 1632396104146
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 19993851aca548f1a54d69c0a4a41d66
+run_uuid: 19993851aca548f1a54d69c0a4a41d66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1632396100357
+status: 3
+tags: []
+user_id: surnyaev-da
