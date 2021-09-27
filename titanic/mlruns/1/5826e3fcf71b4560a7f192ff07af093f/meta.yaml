@@ -2,7 +2,7 @@ artifact_uri: file:///C:/Users/Surnyaev-DA/Documents/ANACONDA/OPiR/MLOps/Kedro/K
 end_time: 1632488710203
 entry_point_name: ''
 experiment_id: '1'
-lifecycle_stage: active
+lifecycle_stage: deleted
 name: ''
 run_id: 5826e3fcf71b4560a7f192ff07af093f
 run_uuid: 5826e3fcf71b4560a7f192ff07af093f

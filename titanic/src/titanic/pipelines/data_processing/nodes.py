@@ -6,6 +6,9 @@ def cat_to_num(arr):
 
 
 def preprocess_dataset(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Label encoding for two columns "Sex" and "Embarked"
+    """
     
     df = df.dropna(subset=["Embarked"])
     

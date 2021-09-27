@@ -1,6 +1,6 @@
 input_data:
     type: pandas.CSVDataSet
-    filepath: data/01_raw/titanic.csv
+    filepath: data/01_raw/train.csv
 
 preprocessed_input_data:
     type: pandas.CSVDataSet
