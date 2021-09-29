@@ -1,12 +1,23 @@
 input_data:
     type: pandas.CSVDataSet
     filepath: data/01_raw/train.csv
+    layer: raw
 
 preprocessed_input_data:
     type: pandas.CSVDataSet
     filepath: data/02_intermediate/preprocessed_input_data.csv
+    layer: intermediate
     
 classificator:
     type: pickle.PickleDataSet
     filepath: data/06_models/classificator.pickle
     versioned: true
+    layer: models
+
+#classificator:
+ #   type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+ #   data_set:
+ #       type: kedro_mlflow.io.models.MlflowModelSaverDataSet
+ #       flavor: mlflow.sklearn
+ #       filepath: data/06_models/sklearn_model
+ #   layer: models

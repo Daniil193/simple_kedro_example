@@ -1,0 +1,1 @@
+{'test_size': 0.3, 'random_state': 12, 'n_estimators': 50, 'metric': 'accuracy_score', 'features': ['Pclass', 'Sex', 'SibSp', 'Parch', 'Embarked']}

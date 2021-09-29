@@ -20,7 +20,6 @@ def get_score(name_metric: str, y_true: pd.Series, y_pred: (np.ndarray, np.array
         print("Invalid metric name")
         return np.nan
     score = getattr(metrics, name_metric)(y_true, y_pred)
-    mlflow.log_metric(name_metric, score)
     return round(score, 2)
 
 
@@ -47,10 +46,10 @@ def train_model(X_train: pd.DataFrame, y_train: pd.Series, parameters: Dict) -> 
 def evaluate_model(rndm_forest: RandomForestClassifier, X_test: pd.DataFrame, y_test: pd.Series, parameters: Dict):
     y_pred = rndm_forest.predict(X_test)
     score = get_score(parameters["metric"], y_test, y_pred)
-    logger = logging.getLogger(__name__)
-    logger.info(f"Model has a value {score} for {parameters['metric']}")
-    sklearn.log_model(sk_model=rndm_forest, artifact_path="model")
-    mlflow.log_param("metric", parameters["metric"])
+    #logger = logging.getLogger(__name__)
+    #logger.info(f"Model has a value {score} for {parameters['metric']}")
+    #sklearn.log_model(sk_model=rndm_forest, artifact_path="model")
+    mlflow.log_metric(parameters["metric"], score)
     
     
     

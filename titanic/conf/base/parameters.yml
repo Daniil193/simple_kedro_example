@@ -1,6 +1,6 @@
-test_size: 0.2
-random_state: 17
-n_estimators: 100
+test_size: 0.3
+random_state: 12
+n_estimators: 50
 metric: "accuracy_score"
 features:
     - Pclass
